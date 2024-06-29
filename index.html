@@ -49,6 +49,19 @@
                 </div>
             </div>
         </section>
+        <section class="hobby">
+            <h1>Хоббі</h1>
+            <div class="section_row">
+              <div class="section_item">
+                <img src="gobi_logo.png" alt="">
+                <p>Моя улюблена гобі - це гобі Гоблін. Вона дуже любить грати з м'ячем і купатися в сонці.</p>
+              </div>
+              <div class="section_item">
+                <img src="gobi_photo.jpg" alt="">
+                <p>Ось фото моєї гобі Гоблін. Вона дуже вродлива, правда?</p>
+              </div>
+            </div>
+          </section>
         <section class="contacts">
             <h1>Контакти</h1>
             <div class="section_row">
@@ -69,6 +82,47 @@
                 </div>
             </div>
         </section>
+        <section class="calculator">
+            <h1>Калькулятор</h1>
+            <div class="calculator_container">
+              <input type="number" id="num1" placeholder="Число 1">
+              <input type="number" id="num2" placeholder="Число 2">
+              <select id="operator">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+              </select>
+              <button id="calculate">Расчитати</button>
+              <p id="result"></p>
+            </div>
+          </section>
+          
+          <script>
+            document.getElementById('calculate').addEventListener('click', function() {
+              const num1 = parseFloat(document.getElementById('num1').value);
+              const num2 = parseFloat(document.getElementById('num2').value);
+              const operator = document.getElementById('operator').value;
+              let result;
+          
+              switch (operator) {
+                case '+':
+                  result = num1 + num2;
+                  break;
+                case '-':
+                  result = num1 - num2;
+                  break;
+                case '*':
+                  result = num1 * num2;
+                  break;
+                case '/':
+                  result = num1 / num2;
+                  break;
+              }
+          
+              document.getElementById('result').innerHTML = `Результат: ${result}`;
+            });
+          </script>
     </main>
     <footer>
         <div class="footer_content">
@@ -76,13 +130,22 @@
         </div>
     </footer>
     <script>
-        // Add smooth scrolling to the header button
         document.querySelector('.header_btn').addEventListener('click', function() {
             window.scrollTo({
                 top: document.querySelector('main').offsetTop,
                 behavior: 'mooth'
             });
         });
+        document.querySelector('.header_btn').addEventListener('click', function() {
+  window.scrollTo({
+    top: document.querySelector('main').offsetTop,
+    behavior: 'mooth'
+  });
+  this.classList.add('animate');
+  setTimeout(function() {
+    this.classList.remove('animate');
+  }.bind(this), 200);
+});
     </script>
 </body>
 </html>

@@ -177,3 +177,32 @@ footer {
     text-align: center;
     clear: both;
 }
+
+.section_item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+  }
+
+  .show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+
+  .header_btn {
+    transition: transform 0.2s;
+  }
+  
+  .header_btn:hover {
+    transform: scale(1.1);
+  }
+  
+
+  .section_item img {
+    transition: transform 0.2s;
+  }
+  
+  .section_item:hover img {
+    transform: scale(1.1);
+  }
