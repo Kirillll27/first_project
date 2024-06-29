@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f77600b8df.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="header_left">
+          <h1>Ім'я Прізвище</h1>
+          <div class="bio">
+            <p>Студент "Logika", навчаюся програмуванню з 2022 року.</p>
+            <p>Маю досвід у розробці веб-додатків на основі HTML, CSS, JavaScript та React.</p>
+            <p>Моя мета - стати досвідченим розробником програмного забезпечення.</p>
+          </div>
+        </div>
+        <div class="header_right">
+          <div class="header_btn">
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+        </div>
+      </header>
+    <main>
+        <section class="skills">
+            <h1>Навички</h1>
+            <div class="section_row">
+                <div class="section_item">
+                    <img src="html_logo.png" alt="">
+                </div>
+                <div class="section_item">
+                    <img src="css_logo.png" alt="">
+                </div>
+                <div class="section_item">
+                    <img src="js_logo.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="projects">
+            <h1>Проєкти</h1>
+            <div class="section_row">
+                <div class="section_item github">
+                    <a href="https://github.com/Kirillll27" target="_blank">
+                        <img src="github_logo.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="contacts">
+            <h1>Контакти</h1>
+            <div class="section_row">
+                <div class="section_item">
+                    <a href="https://instagram.com/yourinstagramusername" target="_blank">
+                        <img src="Instagram_icon.png.webp" alt="">
+                    </a>
+                </div>
+                <div class="section_item">
+                    <a href="https://t.me/Kr3sh_Game" target="_blank">
+                        <img src="tg_logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="section_item">
+                    <a href="mailto:kirillhavtyra@gmail.com.com">
+                        <img src="email_logo.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer_content">
+            Створено мною в 2024 | Logika
+        </div>
+    </footer>
+    <script>
+        // Add smooth scrolling to the header button
+        document.querySelector('.header_btn').addEventListener('click', function() {
+            window.scrollTo({
+                top: document.querySelector('main').offsetTop,
+                behavior: 'mooth'
+            });
+        });
+    </script>
+</body>
+</html>
